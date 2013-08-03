@@ -97,6 +97,12 @@
       .footer a {
         color: #ccccff;
       }
+
+	/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+	div.addthis_toolbox {
+	width:180px;
+	margin: 0 auto;
+	}
     </style>
   </head>
   <body>
@@ -112,7 +118,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">MemoToy</a>
+          <a class="brand" href="#">BitCorp Registry</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -133,14 +139,14 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>BitCorp Registry</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">MemoToy is something that you can't forget.</p>
+          <p class="lead">The digital business registry.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
@@ -188,8 +194,17 @@
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+
+	    <!-- AddThis Button BEGIN -->
+	    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+	    </div>
+	    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd3f4e1278a2e6"></script>
+	    <!-- AddThis Button END -->
           </div>
         </div>
       </div>
@@ -204,10 +219,13 @@
         </div>
         <div class="span5 copy">
           <p>
-            MemoToy is a highly customizable plush toy. You can record your own message on it and use it a timebox or as a present for your dear ones.
+            BitCorp Registry is a service for virtual incorporation. It's aim is to create an administrative framework for people who conduct busines based on a crypto currency like Bitcoin.
           </p>
 	  <p>
-	    MemoToy will come with record and play features, which allow you to create you own unique timebox. 
+	    This services helps companies to gain the trust of their customers and partners.
+	  </p>
+	  <p>
+	    With BitCorp Registry, individuals and businesses can obtain a virtual registration certificate and optionally deposit a warranty. This warranty assures customers and partners that they're dealing with a serious business.
 	  </p>
         </div>
       </div>
@@ -215,10 +233,13 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            We need to raise funds in order to reach a reasonable manufacturing volume and to strike good deals with the suppliers and to make it affordable.
+	    In classic states, the trust comes from the fact that individuals expect the state to enforce the law. In the digital ecosystem, the fact that states do not have much authority is beneficial for freedom, but it makes hard to gain trust from customers.
+	  </p>
+	  <p>
+	    We will implement an independent virtual legal system, whose task is to solve the disputes between registered companies and their customers or partners. All the liability of a company is limited by the deposited warranty.
           </p>
 	  <p>
-	    Once we kickoff the manufacturing everything will get better and cheaper, due to the economies of scale.
+	    Register your BitCorp now and operate with 0% tax forever!
 	  </p>
         </div>
         <div class="span5 asset">
@@ -242,7 +263,8 @@
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    All the pre-orders will be refunded.
+                    <p>If we don't raise enough funds, we'll try to get seed funding from a virtual bank like <a href="http://www.bitdeposit.net/">Bit Deposit</a> and we'll try to raise some more funds by listing the company at a virtual stock exchange like <a href="https://btct.co/">BTC Trading</a>.</p>
+		    <p>If after all those steps we can't get enough funding, we will refund all the initial reservations for BitCorp registrations.</p>
                   </div>
                 </div>
               </div>
@@ -250,12 +272,25 @@
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseTwo">
-                     When do you expect to ship the first units ?
+                     When do you expect to start operating the BitCorp Registry ?
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    We expect to ship the first units in about 6 months.
+                    We expect to start operating the BitCorp Registry in about 6 months.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion3" href="#collapseThree">
+                     What will be the cost of the registrations ?
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    The BitCorp registration will cost 0.5 BTC, and there will be a maintainance fee of 0.1 BTC / year to make sure that the registered company is still active.
                   </div>
                 </div>
               </div>
@@ -276,5 +311,30 @@
         </div>
       </div>
     </div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42935962-1', 'herokuapp.com');
+    ga('send', 'pageview');
+
+    </script>
+
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42935962-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
   </body>
 </html>
